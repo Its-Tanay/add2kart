@@ -1,6 +1,7 @@
-import { useSelector } from "react-redux/es/hooks/useSelector"
-import { useDispatch } from "react-redux/es/hooks/useDispatch"
-import { removeFromCart } from "../../redux/features/cartSlice"
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { increment } from "../../redux/features/cartSlice"
+import { decrement } from "../../redux/features/cartSlice"
 
 export default function Cart() {
 
@@ -9,11 +10,15 @@ export default function Cart() {
 
     const dispatch = useDispatch();
 
-    const total = cartItems.reduce((acc, item) => acc + parseFloat(item.price.substring(2)), 0);
-
-    const handleRemoveFromCart = (e) => {
-        dispatch(removeFromCart(e));
+    const handleIncrement = (e) => {
+        dispatch(increment(e))
     }
+
+    const handleDecrement = (e) => {
+        dispatch(decrement(e))
+    }
+    
+    const total = cartItems.reduce((acc, item) => acc + item.price.slice(2) * item.quantity, 0);
 
     return (
         <div className="flex flex-col m-6 gap-6">
@@ -25,9 +30,9 @@ export default function Cart() {
                             <div className="flex flex-col items-center justify-center gap-3">
                                 <p className="text-lg tablet:text-xl font-light laptop:text-2xl">{item.price}</p>
                                 <div className="flex gap-4 items-center">
-                                    <button onClick={() => handleRemoveFromCart(item)} className="border-[1px] rounded-[50%] py-[0.2rem] px-[0.7rem] text-center">-</button>
-                                    <p>{item.quantity}1</p>
-                                    <button className="border-[1px] rounded-[50%] py-[0.2rem] px-[0.7rem] text-center">+</button>
+                                    <button onClick={() => {handleDecrement(item.id)}} className="border-[1px] rounded-[50%] py-[0.2rem] px-[0.7rem] text-center">-</button>
+                                    <p>{item.quantity}</p>
+                                    <button onClick={() => {handleIncrement(item.id)}} className="border-[1px] rounded-[50%] py-[0.2rem] px-[0.7rem] text-center">+</button>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +43,7 @@ export default function Cart() {
                 <p className="text-lg text-right font-light tablet:text-xl laptop:text-2xl">₹ {total}<span className="text-[0.5rem] ml-2 font-extralight tablet:text-[0.8rem] laptop:text-[1rem]">Inc. of all taxes</span></p>
             </div>
             <div className="flex items-center justify-center">
-                <button className="border-black border-2 p-2 rounded-[20px] hover:text-white hover:bg-black w-[40%] h-[4rem] font-light">Proceed to checkout</button>
+                <button className="border-black border-2 p-2 rounded-[20px] hover:text-white hover:bg-black w-[100%] h-[4rem] font-light tablet:w-[60%] laptop:w-[40%]">Proceed to checkout</button>
             </div>
         </div>
     )
