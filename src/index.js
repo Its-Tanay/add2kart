@@ -9,6 +9,7 @@ import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import ErrorPage from "./components/page/error";
 import "./styles/index.css";
+import ProductPage from "./components/shopping/prodPage";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop />,
+      },
+      {
+        path: "/shop/:id",
+        element: <ProductPage />,
       },
       {
         path: "/cart",

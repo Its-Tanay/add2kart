@@ -15,7 +15,7 @@ export default function Header() {
                 <li>
                     <Link to="/shop">Shop</Link>
                 </li>  
-                <li>
+                <li className="relative">
                     <Link to="/cart"><img src={cartIcon} alt="cart icon" className="w-8 h-auto" /></Link>
                 </li>
             </ul>

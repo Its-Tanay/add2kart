@@ -35,7 +35,7 @@ export default function Home() {
         <div id="imgContainer" className="w-full h-screen bg-cover bg-no-repeat bg-center transition-background-image duration-1000 ease-in-out bg-opacity-100">
             <div className="flex flex-col gap-y-10 justify-center items-center w-full h-screen bg-black bg-opacity-70">
                 <p className="text-center text-mob-para text-stone-50 w-6/12 tracking-widest font-bold tablet:text-tab-para laptop:text-lap-para">Discover the Intersection of Fashion and Minimalism at Add 2 Kart. Explore our curated collection of modern clothing, where clean lines and unique aesthetics meet to elevate your wardrobe to new heights.</p>
-                <button className="p-4 bg-stone-50 text-black font-bold py-2 px-4 rounded-full transition ease duration-500 hover:bg-black hover:text-stone-50 tablet:text-tab-base laptop:text-lap-base"
+                <button className="p-4 bg-stone-50 text-black py-2 px-4 rounded-full transition ease duration-500 hover:bg-black hover:text-stone-50 tablet:text-tab-base laptop:text-lap-base"
                 ><Link to="/shop">Start shopping</Link></button>
             </div>
         </div>

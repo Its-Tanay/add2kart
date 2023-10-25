@@ -30,6 +30,9 @@ module.exports = {
         'mob-card': '20rem',
         'tab-card': '25rem',
         'lap-card': '28rem',
+      },
+      borderRadius:{
+        'round': '50%'
       }
     },
   },

@@ -1,5 +1,6 @@
 import addIcon from '../../assets/add.svg';
 
+
 export default function Card({imgUrl, name, price, id}){
 
     return(
