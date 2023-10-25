@@ -1,0 +1,16 @@
+[
+    {
+        "id":1,
+        "name": "Shirt",
+        "price": 19.99,
+        "description": "Relaxed fit collared shirt featuring long sleeves with buttoned cuffs and a button-up front.",
+        "image": "https://static.zara.net/photos///2023/I/0/2/p/4087/360/700/2/w/850/4087360700_6_1_1.jpg?ts=1689064190793"
+    },
+    {
+        "id":2,
+        "name": "Biker Jacket",
+        "price": 49.99,
+        "description":"Cropped jacket made of leather effect. Lapel collar with snap-button detail. Long sleeves with zip cuffs. Front zip pockets and inside pocket detail. Faded effect. Asymmetric metal zip-up front.",
+        "image":"https://static.zara.net/photos///2023/I/0/2/p/8281/328/036/2/w/850/8281328036_6_1_1.jpg?ts=1694094390258"
+    }
+]

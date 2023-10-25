@@ -25,8 +25,8 @@ export default function Footer() {
                     <div>
                         <h1 className="text-lg pb-2 tablet:text-xl tablet:pb-2 laptop:text-2xl laptop:pb-4">Our Socials</h1>
                         <ul className="font-extralight flex justify-center gap-x-8 tablet:text-tab-base laptop:text-lap-base">
-                            <li><i class="bi bi-instagram"></i></li>
-                            <li><i class="bi bi-facebook"></i></li>
+                            <li><i className="bi bi-instagram"></i></li>
+                            <li><i className="bi bi-facebook"></i></li>
                         </ul>
                     </div>
                     <div className="flex flex-col">
