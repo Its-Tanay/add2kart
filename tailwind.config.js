@@ -20,6 +20,16 @@ module.exports = {
         'mob-para': '1.2rem',
         'tab-para': '1.4rem',
         'lap-para': '1.6rem',
+      },
+      height:{
+        'mob-card': '35rem',
+        'tab-card': '42rem',
+        'lap-card': '48rem',
+      },
+      width:{
+        'mob-card': '20rem',
+        'tab-card': '25rem',
+        'lap-card': '28rem',
       }
     },
   },

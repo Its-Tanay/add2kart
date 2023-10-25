@@ -2,15 +2,44 @@
     {
         "id":1,
         "name": "Shirt",
-        "price": 19.99,
+        "price": "₹ 3,990",
         "description": "Relaxed fit collared shirt featuring long sleeves with buttoned cuffs and a button-up front.",
         "image": "https://static.zara.net/photos///2023/I/0/2/p/4087/360/700/2/w/850/4087360700_6_1_1.jpg?ts=1689064190793"
     },
     {
         "id":2,
         "name": "Biker Jacket",
-        "price": 49.99,
+        "price": "₹ 7,590",
         "description":"Cropped jacket made of leather effect. Lapel collar with snap-button detail. Long sleeves with zip cuffs. Front zip pockets and inside pocket detail. Faded effect. Asymmetric metal zip-up front.",
         "image":"https://static.zara.net/photos///2023/I/0/2/p/8281/328/036/2/w/850/8281328036_6_1_1.jpg?ts=1694094390258"
+    },
+    {
+        "id":3,
+        "name": "Sweatshirt",
+        "price": "₹ 3,990",
+        "description":"Long sleeve hoodie with an adjustable drawstring hood. Featuring contrast prints on the front and back, a front pouch pocket and ribbed trims.",
+        "image":"https://static.zara.net/photos///2023/I/0/2/p/0962/354/251/2/w/850/0962354251_6_1_1.jpg?ts=1696503964318"
+
+    },
+    {
+        "id":4,
+        "name":"Cargo",
+        "price": "₹ 3,290",
+        "description": "Straight fit jeans. Front pockets and rear patch pockets. Patch pockets with flaps on the legs. Faded effect. Front zip fly and button fastening.",
+        "image": "https://static.zara.net/photos///2023/I/0/2/p/8062/310/800/2/w/850/8062310800_6_1_1.jpg?ts=1690976422971"
+    },
+    {
+        "id":5,
+        "name":"Jeans",
+        "price":"₹ 2,990",
+        "description": "Straight fit jeans with five pockets. Faded effect. Front button fastening.",
+        "image": "https://static.zara.net/photos///2023/I/0/2/p/8062/405/400/2/w/850/8062405400_6_1_1.jpg?ts=1688642038336"
+    },
+    {
+        "id":6,
+        "name":"Sneaker",
+        "price":"₹ 3,990",
+        "description":"Sneakers. Combination of pieces and colours on the upper. Six-eyelet facing. Chunky sole with an irregular design. Slight track sole.",
+        "image":"https://static.zara.net/photos///2023/I/1/2/p/2215/220/202/2/w/850/2215220202_6_1_1.jpg?ts=1695205782686"
     }
 ]
