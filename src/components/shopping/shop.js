@@ -7,6 +7,7 @@ import productsData from "../../data.json"
 import { Link } from "react-router-dom";
 
 export default function Shop(){
+
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -17,7 +18,7 @@ export default function Shop(){
 
     return (
     <>
-        <div className="grid grid-cols-1 grid-rows-6 content-center items-center justify-items-center tablet:grid-cols-2 tablet:grid-rows-3 laptop:grid-cols-3 laptop:grid-rows-2 laptop:p-x-4">
+        <div className="grid grid-cols-1 grid-rows-6 content-center items-center justify-items-center tablet:grid-cols-2 tablet:grid-rows-3 laptop:grid-cols-3 laptop:grid-rows-2 laptop:p-x-4 transition ease duration-500">
             {products.map((product) => (
                     <Link to={`/shop/${product.id}`}>
                         <Card

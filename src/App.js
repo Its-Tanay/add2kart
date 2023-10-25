@@ -5,7 +5,7 @@ import Content from './components/page/content';
 
 function App() {
   return (
-    <div className='grid grid-rows-page'> 
+    <div className='grid grid-rows-page relative'> 
       <Header />
       <Content />
       <Footer />

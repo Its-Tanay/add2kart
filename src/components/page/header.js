@@ -4,7 +4,7 @@ import cartIcon from "../../assets/cart.svg"
 
 export default function Header() {
     return (
-        <div id="header" className="flex flex-col transition ease duration-500 justify-evenly items-center tablet:flex-row laptop:flex-row">
+        <div id="header" className="flex flex-col transition ease duration-500 justify-evenly items-center tablet:flex-row laptop:flex-row shadow-md ">
 
             <img src={logo} alt="logo" className="w-20 h-auto transition ease duration-500 tablet:w-24 tablet:h-auto laptop:w-28 laptop:h-auto" />
 

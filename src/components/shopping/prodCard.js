@@ -1,7 +1,8 @@
 import addIcon from '../../assets/add.svg';
 
 
-export default function Card({imgUrl, name, price, id}){
+
+export default function Card({imgUrl, name, price, id, handleClick}){
 
     return(
         <div id={id} className='flex flex-col relative w-mob-card h-mob-card p-4 gap-y-2 tablet:w-tab-card tablet:h-tab-card tablet:p-4 laptop:w-lap-card laptop:h-lap-card laptop:p-6'>
@@ -10,7 +11,7 @@ export default function Card({imgUrl, name, price, id}){
                 <h2 className='text-sm tablet:text-base laptop:text-lg'>{name}</h2>
                 <h3 className='font-light text-xs tablet:text-sm laptop:text-base'>{price}</h3>
             </div>
-            <button className='absolute bottom-12 right-6 tablet:bottom-16 tablet:right-8 laptop:bottom-24 laptop:right-6'><img src={addIcon} alt='addIcon' /></button>
+            <button onClick={handleClick} className='absolute bottom-12 right-6 tablet:bottom-16 tablet:right-8 laptop:bottom-24 laptop:right-6 flex gap-2 hover:transform '>Add to Cart<img src={addIcon} alt='addIcon' /></button>
         </div>
     )
 }
